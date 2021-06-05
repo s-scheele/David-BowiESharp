@@ -30,7 +30,7 @@ int findMostFrequentElement()
            }     
         }     
     }        
-    //finnd the most occuring element
+    //find the most occuring element
     int max_count = 1;
     int res = array_of_notes_running[0];
     int count = 1; 
@@ -40,7 +40,8 @@ int findMostFrequentElement()
             count++; 
         }
         else { 
-            if (count > max_count) { 
+            if (count > max_count) 
+            { 
                 max_count = count; 
                 res = array_of_notes_running[i - 1]; 
             } 
@@ -53,7 +54,7 @@ int findMostFrequentElement()
         max_count = count; 
         res = array_of_notes_running[n - 1]; 
     }   
-    return find_chord(res); //return the most repeatinng  element
+    return find_chord(res); //return the most repeating element
 }
 
 

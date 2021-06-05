@@ -3,9 +3,6 @@
 #include <arduinoFFT.h>
 arduinoFFT FFT = arduinoFFT();
 #include "variables.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 
 void setup_mic()
 {

@@ -1,4 +1,3 @@
-#include <WiFi.h>
 #include "driver/i2s.h"
 #include <arduinoFFT.h>
 arduinoFFT FFT = arduinoFFT();
@@ -394,7 +393,6 @@ void setup()
 {
   Serial.begin(115200);
   Serial.write("A");
-  WiFi.mode(WIFI_OFF);
   setup_mic();
   setup_buttons();
 }

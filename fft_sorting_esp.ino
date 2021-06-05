@@ -35,8 +35,10 @@ int findMostFrequentElement()
     int res = array_of_notes_running[0];
     int count = 1; 
     for (int i = 1; i < n; i++) { 
-        if (array_of_notes_running[i] == array_of_notes_running[i - 1]) 
+        if (array_of_notes_running[i] == array_of_notes_running[i - 1])
+        {
             count++; 
+        }
         else { 
             if (count > max_count) { 
                 max_count = count; 
@@ -48,9 +50,7 @@ int findMostFrequentElement()
     // If last element is most frequent 
     if (count > max_count) 
     { 
-        max_count = count
-        
-        ; 
+        max_count = count; 
         res = array_of_notes_running[n - 1]; 
     }   
     return find_chord(res); //return the most repeatinng  element
